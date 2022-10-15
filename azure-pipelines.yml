@@ -1,4 +1,9 @@
 # Node.js
+- task: Npm@1
+  inputs:
+    command: 'custom'
+    workingDir: '$(System.DefaultWorkingDirectory)/_Mandeepsheoran.CypressFramework'
+    customCommand: 'run scripts'
 - task: NodeTool@0
   inputs:
     versionSpec: '16.17'
