@@ -2,7 +2,7 @@ version: "3"
 services:
   # this container will run Cypress test using built-in Electron browser
   e2e-electron:
-    image: "mandeep1989/cypressdemo:1.10"
+    image: "mandeep1989/cypressproject:1.1"
     command: "electrontest-mocha"
     volumes:
       - ./cypress/videos:/cypress-docker/cypress/videos
@@ -10,7 +10,7 @@ services:
 
   # this container will run Cypress test using Chrome browser
   e2e-chrome:
-    image: "mandeep1989/cypressdemo:1.10"
+    image: "mandeep1989/cypressproject:1.1"
     command: "chrometest-mocha"
     volumes:
       - ./cypress/videos:/cypress-docker/cypress/videos
@@ -19,7 +19,7 @@ services:
   # this container will run Cypress test using Firefox browser
   # note that both Chrome and Firefox browsers were pre-installed in the Docker image
   e2e-firefox:
-    image: "mandeep1989/cypressdemo:1.10"
+    image: "mandeep1989/cypressproject:1.1"
     command: "firefoxtest-mocha"
     # if you want to debug FF run, pass DEBUG variable like
     environment:
