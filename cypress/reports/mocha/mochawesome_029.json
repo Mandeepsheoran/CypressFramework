@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-10-15T10:03:39.693Z",
+    "end": "2022-10-15T10:03:39.898Z",
+    "duration": 205,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8a475fb5-e743-49bd-a290-9b21902c3a85",
+      "title": "",
+      "fullFile": "cypress/integration/demo-test/TC_01_ReadWriteFile.spec.js",
+      "file": "cypress/integration/demo-test/TC_01_ReadWriteFile.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1b9fb70f-885d-4969-a916-3f8b8de73016",
+          "title": "Read Write File",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Write file",
+              "fullTitle": "Read Write File Write file",
+              "timedOut": null,
+              "duration": 139,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.writeFile('samplefile.txt', \"Mandeep Sheoran\");\ncy.writeFile('samplefile.txt', \"Kaju Sheoran\", {\n  flag: \"a+\"\n});",
+              "err": {},
+              "uuid": "1033862c-660f-43ba-a157-231a886b9b85",
+              "parentUUID": "1b9fb70f-885d-4969-a916-3f8b8de73016",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Read file",
+              "fullTitle": "Read Write File Read file",
+              "timedOut": null,
+              "duration": 40,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.readFile('samplefile.txt').should('include', 'Mandeep SheoranKaju Sheoran');",
+              "err": {},
+              "uuid": "f061411f-75ed-47ae-be08-d3116aff4b44",
+              "parentUUID": "1b9fb70f-885d-4969-a916-3f8b8de73016",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1033862c-660f-43ba-a157-231a886b9b85",
+            "f061411f-75ed-47ae-be08-d3116aff4b44"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 179,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

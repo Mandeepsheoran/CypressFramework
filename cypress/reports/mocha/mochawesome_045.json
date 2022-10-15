@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-10-15T10:05:06.136Z",
+    "end": "2022-10-15T10:05:06.992Z",
+    "duration": 856,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8426b142-806a-4b4d-aeef-eb6580b65a6e",
+      "title": "",
+      "fullFile": "cypress/integration/demo-test/TC_14_RetryTest.spec.js",
+      "file": "cypress/integration/demo-test/TC_14_RetryTest.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "055aa582-fc0a-46a0-b292-9f424b809b3a",
+          "title": "Test retry",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Retry Test",
+              "fullTitle": "Test retry Retry Test",
+              "timedOut": null,
+              "duration": 201,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/TC_14_RetryTest.spec.js/Test retry -- Retry Test (failed).png\"",
+              "code": "expect(1).to.be.eql(2);",
+              "err": {
+                "message": "AssertionError: expected 1 to deeply equal 2",
+                "estack": "AssertionError: expected 1 to deeply equal 2\n    at Context.eval (http://localhost:40765/__cypress/tests?p=cypress/integration/demo-test/TC_14_RetryTest.spec.js:113:21)",
+                "diff": "- 1\n+ 2\n"
+              },
+              "uuid": "7344ec41-1283-4734-bb38-d5e97f507250",
+              "parentUUID": "055aa582-fc0a-46a0-b292-9f424b809b3a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "7344ec41-1283-4734-bb38-d5e97f507250"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 201,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

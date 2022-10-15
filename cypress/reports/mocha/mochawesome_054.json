@@ -1,0 +1,169 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-10-15T10:06:42.221Z",
+    "end": "2022-10-15T10:06:43.154Z",
+    "duration": 933,
+    "testsRegistered": 4,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 3,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "1adcca56-f004-431e-b896-f79f59b33b36",
+      "title": "",
+      "fullFile": "cypress/integration/demo-test/TC_18_Axelibrary.spec.js",
+      "file": "cypress/integration/demo-test/TC_18_Axelibrary.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "cef55b96-4294-4741-a0a4-6d93953d0c6e",
+          "title": "Accessibility testing",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Axe library- Full page Scan",
+              "fullTitle": "Accessibility testing Axe library- Full page Scan",
+              "timedOut": null,
+              "duration": 687,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/TC_18_Axelibrary.spec.js/Accessibility testing -- Axe library- Full page Scan (failed).png\"",
+              "code": "cy.checkA11y();",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://127.0.0.1:5500/HelpFolder/differentDropDownTypes.html\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:5500\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nBecause this error occurred during a `before all` hook we are skipping the remaining tests in the current suite: `Accessibility testing`",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://127.0.0.1:5500/HelpFolder/differentDropDownTypes.html\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:5500\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nBecause this error occurred during a `before all` hook we are skipping the remaining tests in the current suite: `Accessibility testing`\ngo/</<@http://localhost:46861/__cypress/runner/cypress_runner.js:140524:23\nvisitFailedByErr@http://localhost:46861/__cypress/runner/cypress_runner.js:139883:12\ngo/<@http://localhost:46861/__cypress/runner/cypress_runner.js:140523:27\ntryCatcher@http://localhost:46861/__cypress/runner/cypress_runner.js:10798:23\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler@http://localhost:46861/__cypress/runner/cypress_runner.js:8733:31\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise@http://localhost:46861/__cypress/runner/cypress_runner.js:8790:18\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise0@http://localhost:46861/__cypress/runner/cypress_runner.js:8835:10\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromises@http://localhost:46861/__cypress/runner/cypress_runner.js:8911:18\n_drainQueueStep@http://localhost:46861/__cypress/runner/cypress_runner.js:5505:12\n_drainQueue@http://localhost:46861/__cypress/runner/cypress_runner.js:5498:24\n../../node_modules/bluebird/js/release/async.js/</Async.prototype._drainQueues@http://localhost:46861/__cypress/runner/cypress_runner.js:5514:16\nAsync/this.drainQueues@http://localhost:46861/__cypress/runner/cypress_runner.js:5384:14\nFrom Your Spec Code:\n    ./cypress/integration/demo-test/TC_18_Axelibrary.spec.js/</<@http://localhost:46861/__cypress/tests?p=cypress/integration/demo-test/TC_18_Axelibrary.spec.js:101:8\n    setRunnable/runnable.fn@http://localhost:46861/__cypress/runner/cypress_runner.js:153638:45\n    callFn@http://localhost:46861/__cypress/runner/cypress_runner.js:109370:21\n    ../driver/node_modules/mocha/lib/runnable.js/</Runnable.prototype.run@http://localhost:46861/__cypress/runner/cypress_runner.js:109357:13\n    onRunnableRun/<@http://localhost:46861/__cypress/runner/cypress_runner.js:159643:28\n    finallyHandler@http://localhost:46861/__cypress/runner/cypress_runner.js:7352:23\n    tryCatcher@http://localhost:46861/__cypress/runner/cypress_runner.js:10798:23\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler@http://localhost:46861/__cypress/runner/cypress_runner.js:8733:31\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise@http://localhost:46861/__cypress/runner/cypress_runner.js:8790:18\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise0@http://localhost:46861/__cypress/runner/cypress_runner.js:8835:10\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromises@http://localhost:46861/__cypress/runner/cypress_runner.js:8915:18\n    _drainQueueStep@http://localhost:46861/__cypress/runner/cypress_runner.js:5505:12\n    _drainQueue@http://localhost:46861/__cypress/runner/cypress_runner.js:5498:24\n    ../../node_modules/bluebird/js/release/async.js/</Async.prototype._drainQueues@http://localhost:46861/__cypress/runner/cypress_runner.js:5514:16\n    Async/this.drainQueues@http://localhost:46861/__cypress/runner/cypress_runner.js:5384:14\n\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 127.0.0.1:5500\n      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16)\n  ",
+                "diff": null
+              },
+              "uuid": "1695a34f-c325-45dd-80ef-e3763c5641b4",
+              "parentUUID": "cef55b96-4294-4741-a0a4-6d93953d0c6e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Axe library- Specific part of page Scan",
+              "fullTitle": "Accessibility testing Axe library- Specific part of page Scan",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.checkA11y(\"input\");",
+              "err": {},
+              "uuid": "3fd2d328-a760-4366-bff1-82881407df50",
+              "parentUUID": "cef55b96-4294-4741-a0a4-6d93953d0c6e",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Axe library- Ignoring some of part for Scan",
+              "fullTitle": "Accessibility testing Axe library- Ignoring some of part for Scan",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.checkA11y({\n  exclude: [\"input\"]\n});",
+              "err": {},
+              "uuid": "2c0a1dba-3195-40f0-80e9-1a57b5056d44",
+              "parentUUID": "cef55b96-4294-4741-a0a4-6d93953d0c6e",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Axe library- Ignoring some WCAG rule in testing",
+              "fullTitle": "Accessibility testing Axe library- Ignoring some WCAG rule in testing",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.checkA11y(null, {\n  rules: {\n    \"region\": {\n      enabled: false\n    }\n  }\n});",
+              "err": {},
+              "uuid": "6e6ee86d-42ad-4b43-898a-92e57063650c",
+              "parentUUID": "cef55b96-4294-4741-a0a4-6d93953d0c6e",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "1695a34f-c325-45dd-80ef-e3763c5641b4"
+          ],
+          "pending": [],
+          "skipped": [
+            "3fd2d328-a760-4366-bff1-82881407df50",
+            "2c0a1dba-3195-40f0-80e9-1a57b5056d44",
+            "6e6ee86d-42ad-4b43-898a-92e57063650c"
+          ],
+          "duration": 687,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

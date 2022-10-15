@@ -1,0 +1,1 @@
+{"uuid":"6d11b9d8-1f01-49f7-ba10-dfdaac19a402","historyId":"ac1e1e69b09b99b702fd9650598ef7ab","status":"skipped","statusDetails":{"message":"Test ignored"},"stage":"finished","steps":[],"attachments":[],"parameters":[],"labels":[{"name":"suite","value":"custom command"}],"links":[],"start":1664895745403,"name":"Dual command","fullName":"Dual command","stop":1664895745403}

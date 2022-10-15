@@ -1,0 +1,170 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-10-15T10:05:17.663Z",
+    "end": "2022-10-15T10:05:18.522Z",
+    "duration": 859,
+    "testsRegistered": 4,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 1,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "5f0e25d5-31bb-4f69-a23c-054c651ed8a4",
+      "title": "",
+      "fullFile": "cypress/integration/demo-test/TC_09_DropdownHandling.spec.js",
+      "file": "cypress/integration/demo-test/TC_09_DropdownHandling.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "54e48e4a-3679-4432-81df-32a9d02648e6",
+          "title": "Dropdown handling",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Select dropdown using JS,JQuery,Cypress",
+              "fullTitle": "Dropdown handling Select dropdown using JS,JQuery,Cypress",
+              "timedOut": null,
+              "duration": 690,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/TC_09_DropdownHandling.spec.js/Dropdown handling -- Select dropdown using JS,JQuery,Cypress (failed).png\"",
+              "code": "//Normal JS way of handling\ncy.get('#speed').select('Slow').should($el => {\n  const el = $el[0];\n  expect(el.options[el.selectedIndex].value).to.eql('2');\n  expect(el.options[el.selectedIndex].text).to.eql('Slow');\n}); //  cy.get('#speed').should('have.text', 'Slow')\n//JQuery Way\ncy.get('#speed').select('Slow').should($el => {\n  expect($el.val()).to.eql('2');\n  expect($el.find(\"option:selected\").text()).to.eql('Slow');\n}); //Cypress Way of handling\ncy.get('#speed').select('Slow').find('option:selected').as('selectedvalue');\ncy.get('@selectedvalue').invoke('text').should('eq', 'Slow');\ncy.get('@selectedvalue').invoke('val').should('eq', '2');",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://127.0.0.1:5500/HelpFolder/differentDropDownTypes.html\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:5500\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nBecause this error occurred during a `before all` hook we are skipping the remaining tests in the current suite: `Dropdown handling`",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://127.0.0.1:5500/HelpFolder/differentDropDownTypes.html\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:5500\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nBecause this error occurred during a `before all` hook we are skipping the remaining tests in the current suite: `Dropdown handling`\ngo/</<@http://localhost:46861/__cypress/runner/cypress_runner.js:140524:23\nvisitFailedByErr@http://localhost:46861/__cypress/runner/cypress_runner.js:139883:12\ngo/<@http://localhost:46861/__cypress/runner/cypress_runner.js:140523:27\ntryCatcher@http://localhost:46861/__cypress/runner/cypress_runner.js:10798:23\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler@http://localhost:46861/__cypress/runner/cypress_runner.js:8733:31\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise@http://localhost:46861/__cypress/runner/cypress_runner.js:8790:18\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise0@http://localhost:46861/__cypress/runner/cypress_runner.js:8835:10\n../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromises@http://localhost:46861/__cypress/runner/cypress_runner.js:8911:18\n_drainQueueStep@http://localhost:46861/__cypress/runner/cypress_runner.js:5505:12\n_drainQueue@http://localhost:46861/__cypress/runner/cypress_runner.js:5498:24\n../../node_modules/bluebird/js/release/async.js/</Async.prototype._drainQueues@http://localhost:46861/__cypress/runner/cypress_runner.js:5514:16\nAsync/this.drainQueues@http://localhost:46861/__cypress/runner/cypress_runner.js:5384:14\nFrom Your Spec Code:\n    ./cypress/integration/demo-test/TC_09_DropdownHandling.spec.js/</<@http://localhost:46861/__cypress/tests?p=cypress/integration/demo-test/TC_09_DropdownHandling.spec.js:101:8\n    setRunnable/runnable.fn@http://localhost:46861/__cypress/runner/cypress_runner.js:153638:45\n    callFn@http://localhost:46861/__cypress/runner/cypress_runner.js:109370:21\n    ../driver/node_modules/mocha/lib/runnable.js/</Runnable.prototype.run@http://localhost:46861/__cypress/runner/cypress_runner.js:109357:13\n    onRunnableRun/<@http://localhost:46861/__cypress/runner/cypress_runner.js:159643:28\n    finallyHandler@http://localhost:46861/__cypress/runner/cypress_runner.js:7352:23\n    tryCatcher@http://localhost:46861/__cypress/runner/cypress_runner.js:10798:23\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler@http://localhost:46861/__cypress/runner/cypress_runner.js:8733:31\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise@http://localhost:46861/__cypress/runner/cypress_runner.js:8790:18\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise0@http://localhost:46861/__cypress/runner/cypress_runner.js:8835:10\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromises@http://localhost:46861/__cypress/runner/cypress_runner.js:8915:18\n    _drainQueueStep@http://localhost:46861/__cypress/runner/cypress_runner.js:5505:12\n    _drainQueue@http://localhost:46861/__cypress/runner/cypress_runner.js:5498:24\n    ../../node_modules/bluebird/js/release/async.js/</Async.prototype._drainQueues@http://localhost:46861/__cypress/runner/cypress_runner.js:5514:16\n    Async/this.drainQueues@http://localhost:46861/__cypress/runner/cypress_runner.js:5384:14\n\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 127.0.0.1:5500\n      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16)\n  ",
+                "diff": null
+              },
+              "uuid": "78fed9d2-8343-4b46-9d12-88af8ca69e72",
+              "parentUUID": "54e48e4a-3679-4432-81df-32a9d02648e6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Select autocomplete- dropdown",
+              "fullTitle": "Dropdown handling Select autocomplete- dropdown",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "d3b394bd-5522-461d-a1fd-52550cf7e310",
+              "parentUUID": "54e48e4a-3679-4432-81df-32a9d02648e6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Select multi value from dropdown",
+              "fullTitle": "Dropdown handling Select multi value from dropdown",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#cselect').select(['India', 'Russia']).invoke('val').should('deep.equal', ['Russia', 'India']);\ncy.get('#cselect').select(['India', 'Russia']).find('option:selected').invoke('text').should('deep.equal', ['Russia', 'India'].join(\"\"));",
+              "err": {},
+              "uuid": "a1314243-fc8e-4c21-91c6-d77dcf8c560e",
+              "parentUUID": "54e48e4a-3679-4432-81df-32a9d02648e6",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "DT type multi select and delete",
+              "fullTitle": "Dropdown handling DT type multi select and delete",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "c6c2641f-ec43-447f-bc3f-7997a2407592",
+              "parentUUID": "54e48e4a-3679-4432-81df-32a9d02648e6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "78fed9d2-8343-4b46-9d12-88af8ca69e72"
+          ],
+          "pending": [
+            "d3b394bd-5522-461d-a1fd-52550cf7e310",
+            "c6c2641f-ec43-447f-bc3f-7997a2407592"
+          ],
+          "skipped": [
+            "a1314243-fc8e-4c21-91c6-d77dcf8c560e"
+          ],
+          "duration": 690,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

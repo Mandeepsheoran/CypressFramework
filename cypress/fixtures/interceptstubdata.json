@@ -1,0 +1,16 @@
+{
+    "id": 6,
+    "name": "Mandeep Sheoran",
+    "username": "Mandeep",
+    "email": "Sheoran@gmail.com",
+    "address": {
+      "street": "DSO",
+      "suite": "AL manal",
+      "city": "Dubai",
+      "zipcode": "00000-3874",
+      "geo": {
+        "lat": "-37.3159",
+        "lng": "81.1496"
+      }
+}
+}

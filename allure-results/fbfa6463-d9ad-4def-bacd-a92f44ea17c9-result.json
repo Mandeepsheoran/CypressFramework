@@ -1,0 +1,1 @@
+{"uuid":"fbfa6463-d9ad-4def-bacd-a92f44ea17c9","historyId":"78f9f34b36b943cfa4408f04260873dc","status":"skipped","statusDetails":{"message":"Test ignored"},"stage":"finished","steps":[],"attachments":[],"parameters":[],"labels":[{"name":"suite","value":"custom command"}],"links":[],"start":1664895745403,"name":"get text method","fullName":"get text method","stop":1664895745403}

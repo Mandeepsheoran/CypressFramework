@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-10-15T10:06:49.348Z",
+    "end": "2022-10-15T10:06:56.237Z",
+    "duration": 6889,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f4d2da0c-1913-4f3c-b6d7-b46a05fc933f",
+      "title": "",
+      "fullFile": "cypress/integration/demo-test/TC_20_CyConfigTypes.spec.js",
+      "file": "cypress/integration/demo-test/TC_20_CyConfigTypes.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e70ce34a-2212-400d-b5a7-5ce085973fe9",
+          "title": "Different cy configs",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "config",
+              "fullTitle": "Different cy configs config",
+              "timedOut": null,
+              "duration": 2255,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"/\");",
+              "err": {},
+              "uuid": "213cb2d2-cd5e-40c4-a406-f4435c03e88b",
+              "parentUUID": "e70ce34a-2212-400d-b5a7-5ce085973fe9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "213cb2d2-cd5e-40c4-a406-f4435c03e88b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2255,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

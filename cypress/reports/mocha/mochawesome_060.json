@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-10-15T10:07:50.960Z",
+    "end": "2022-10-15T10:08:02.571Z",
+    "duration": 11611,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8c865e5d-dab7-4003-a928-9660a08586c0",
+      "title": "",
+      "fullFile": "cypress/integration/demo-test/TC_22_SyncAsyncMixHandling.spec.js",
+      "file": "cypress/integration/demo-test/TC_22_SyncAsyncMixHandling.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "dca0d309-bde3-4040-aeef-c1b004495e3b",
+          "title": "asyc-syc code mix and understanding",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "async & sync code mix and how to hanlde it",
+              "fullTitle": "asyc-syc code mix and understanding async & sync code mix and how to hanlde it",
+              "timedOut": null,
+              "duration": 1633,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://react-redux.realworld.io/#/login?_k=slovf7');\nlet arr = [];\ncy.get('a').each(el => {\n  arr.push(el.text());\n}).then(() => {\n  console.log('Length of array is: ${arr.length}');\n  console.log('Anchor tag text string: ${arr.join(\",\")}');\n});",
+              "err": {},
+              "uuid": "312c31b9-6043-47f4-a976-6e259b9f8ae3",
+              "parentUUID": "dca0d309-bde3-4040-aeef-c1b004495e3b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "312c31b9-6043-47f4-a976-6e259b9f8ae3"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1633,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-10-15T10:05:42.977Z",
+    "end": "2022-10-15T10:06:32.335Z",
+    "duration": 49358,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e2872e60-27b6-45f9-9bcd-acf1020e2106",
+      "title": "",
+      "fullFile": "cypress/integration/demo-test/TC_16_DataDrivenTest.spec.js",
+      "file": "cypress/integration/demo-test/TC_16_DataDrivenTest.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6b0b552e-0397-4848-84d0-9b84fae2077f",
+          "title": "Data driven test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Simple login using hardcoded test data",
+              "fullTitle": "Data driven test Simple login using hardcoded test data",
+              "timedOut": null,
+              "duration": 7534,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://dev-ui.azure.digitaltwin.aero/login');\ncy.get('#mat-input-0').type('mandeep.sheoran@sita.aero');\ncy.get('#mat-input-1').type('Machine@123');\ncy.contains('LOGIN').click();",
+              "err": {},
+              "uuid": "d4ace884-209e-4590-8794-20e13661d8e4",
+              "parentUUID": "6b0b552e-0397-4848-84d0-9b84fae2077f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login using fixture file data",
+              "fullTitle": "Data driven test Login using fixture file data",
+              "timedOut": null,
+              "duration": 7704,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://dev-ui.azure.digitaltwin.aero/login');\ncy.fixture('dtuser.json').then(user => {\n  cy.get('#mat-input-0').type(user.username);\n  cy.get('#mat-input-1').type(user.password);\n  cy.contains('LOGIN').click();\n});",
+              "err": {},
+              "uuid": "8698a2b9-5d03-4dab-bb69-a5bc5eda2091",
+              "parentUUID": "6b0b552e-0397-4848-84d0-9b84fae2077f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login using hook- beforeEach",
+              "fullTitle": "Data driven test Login using hook- beforeEach",
+              "timedOut": null,
+              "duration": 7051,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://dev-ui.azure.digitaltwin.aero/login');\ncy.get('#mat-input-0').type(userDetails.username);\ncy.get('#mat-input-1').type(userDetails.password);\ncy.contains('LOGIN').click();",
+              "err": {},
+              "uuid": "346f145b-9a44-4c73-bdda-28ba7368dbfa",
+              "parentUUID": "6b0b552e-0397-4848-84d0-9b84fae2077f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login using hook- beforeEach with regular function",
+              "fullTitle": "Data driven test Login using hook- beforeEach with regular function",
+              "timedOut": null,
+              "duration": 10910,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://dev-ui.azure.digitaltwin.aero/login');\ncy.get('#mat-input-0').type(this.userDetails1.username);\ncy.get('#mat-input-1').type(this.userDetails1.password);\ncy.contains('LOGIN').click();",
+              "err": {},
+              "uuid": "d2887887-8e51-4295-8545-3bcdd1c8392a",
+              "parentUUID": "6b0b552e-0397-4848-84d0-9b84fae2077f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d4ace884-209e-4590-8794-20e13661d8e4",
+            "8698a2b9-5d03-4dab-bb69-a5bc5eda2091",
+            "346f145b-9a44-4c73-bdda-28ba7368dbfa",
+            "d2887887-8e51-4295-8545-3bcdd1c8392a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 33199,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "c94a2714-c430-43e5-acf8-85c9954ae127",
+          "title": "data driven login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "login using alias",
+              "fullTitle": "data driven login login using alias",
+              "timedOut": null,
+              "duration": 12142,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://dev-ui.azure.digitaltwin.aero/login');\ncy.get('#mat-input-0').type(this.userdata.username);\ncy.get('#mat-input-1').type(this.userdata.password);\ncy.contains('LOGIN').click();",
+              "err": {},
+              "uuid": "a871d0e1-1f8f-47f3-af2b-a644d8df545a",
+              "parentUUID": "c94a2714-c430-43e5-acf8-85c9954ae127",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a871d0e1-1f8f-47f3-af2b-a644d8df545a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 12142,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

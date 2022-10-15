@@ -1,0 +1,146 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-10-15T10:07:28.236Z",
+    "end": "2022-10-15T10:08:19.022Z",
+    "duration": 50786,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "14c86b64-579d-4376-b92a-7507bd1063d0",
+      "title": "",
+      "fullFile": "cypress/integration/demo-test/TC_21_CypressStudio.spec.js",
+      "file": "cypress/integration/demo-test/TC_21_CypressStudio.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "09cc21dc-8bf3-476a-abe4-412eb0955ba3",
+          "title": "Manual code writing",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Manual code writing",
+              "fullTitle": "Manual code writing Manual code writing",
+              "timedOut": null,
+              "duration": 23195,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://dev-ui.azure.digitaltwin.aero/login');\ncy.wait(15000);\ncy.get('#mat-input-0').type('mandeep.sheoran@sita.aero');\ncy.get('#mat-input-1').type('Machine@123'); // cy.contains('LOGIN').click()",
+              "err": {},
+              "uuid": "6fb9bad0-d9d0-468d-97a4-f4c1623e917d",
+              "parentUUID": "09cc21dc-8bf3-476a-abe4-412eb0955ba3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6fb9bad0-d9d0-468d-97a4-f4c1623e917d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 23195,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "28a57f38-2b3c-4b1d-9d86-3a54e9d6b1e6",
+          "title": "Cypress studio code",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Cypress Studio code writing",
+              "fullTitle": "Cypress studio code Cypress Studio code writing",
+              "timedOut": null,
+              "duration": 23838,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://dev-ui.azure.digitaltwin.aero/login');\ncy.wait(15000);\n/* ==== Generated with Cypress Studio ==== */\ncy.get('#mat-input-0').clear();\ncy.get('#mat-input-0').type('mandeep.sheoran@sita.aero');\ncy.get('#mat-input-1').clear();\ncy.get('#mat-input-1').type('Machine@123'); //  cy.get('.button-text').click();\n//  cy.get('.button-elements > .image-container').click();\n//  cy.get(':nth-child(6) > .options-section > .option-value > .ng-star-inserted').click();\n/* ==== End Cypress Studio ==== */\n/* ==== Generated with Cypress Studio ==== */\n// cy.get('.layout').click();\n/* ==== End Cypress Studio ==== */",
+              "err": {},
+              "uuid": "701d8a1d-1b01-4b7c-bed0-ec618a72f9ed",
+              "parentUUID": "28a57f38-2b3c-4b1d-9d86-3a54e9d6b1e6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "701d8a1d-1b01-4b7c-bed0-ec618a72f9ed"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 23838,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 5,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-10-15T09:56:54.168Z",
+    "end": "2022-10-15T09:57:13.906Z",
+    "duration": 19738,
+    "testsRegistered": 6,
+    "passPercent": 83.33333333333334,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "da2f6038-06c4-4852-82cc-30ae9260db51",
+      "title": "",
+      "fullFile": "cypress/integration/demo-test/TC_03_DocumentCommand.spec.js",
+      "file": "cypress/integration/demo-test/TC_03_DocumentCommand.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b32f61bf-acd6-4db2-a734-0952c34820ab",
+          "title": "doc command",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Page title using document command",
+              "fullTitle": "doc command Page title using document command",
+              "timedOut": null,
+              "duration": 2480,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.document().should(doc => {\n  let titlename = doc.title;\n  console.log(titlename);\n  expect(titlename).to.be.eql('Conduit');\n});",
+              "err": {},
+              "uuid": "dd782756-c503-4fe9-a9b6-3b9d2158a480",
+              "parentUUID": "b32f61bf-acd6-4db2-a734-0952c34820ab",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Page title using cypress command",
+              "fullTitle": "doc command Page title using cypress command",
+              "timedOut": null,
+              "duration": 4492,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"assets/TC_03_DocumentCommand.spec.js/doc command -- Page title using cypress command (failed).png\"",
+              "code": "cy.title().should(text => {\n  expect(text).to.be.eql('Conduitt');\n});",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected 'Conduit' to deeply equal 'Conduitt'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected 'Conduit' to deeply equal 'Conduitt'\n    ./cypress/integration/demo-test/TC_03_DocumentCommand.spec.js/</</<@http://react-redux.realworld.io/__cypress/tests?p=cypress/integration/demo-test/TC_03_DocumentCommand.spec.js:112:26\n    shouldFnWithCallback/<@http://react-redux.realworld.io/__cypress/runner/cypress_runner.js:137263:17\n    tryCatcher@http://react-redux.realworld.io/__cypress/runner/cypress_runner.js:10798:23\n    ../../node_modules/bluebird/js/release/method.js/module.exports/Promise.try@http://react-redux.realworld.io/__cypress/runner/cypress_runner.js:8072:29\n    shouldFnWithCallback@http://react-redux.realworld.io/__cypress/runner/cypress_runner.js:137261:20\n    shouldFn@http://react-redux.realworld.io/__cypress/runner/cypress_runner.js:137273:35\n    should@http://react-redux.realworld.io/__cypress/runner/cypress_runner.js:137393:23\n    injectAssertion/<@http://react-redux.realworld.io/__cypress/runner/cypress_runner.js:133006:39\n    assertions@http://react-redux.realworld.io/__cypress/runner/cypress_runner.js:133258:14\n    tryCatcher@http://react-redux.realworld.io/__cypress/runner/cypress_runner.js:10798:23\n    gotValue@http://react-redux.realworld.io/__cypress/runner/cypress_runner.js:9942:18\n    gotAccum@http://react-redux.realworld.io/__cypress/runner/cypress_runner.js:9929:25\n    tryCatcher@http://react-redux.realworld.io/__cypress/runner/cypress_runner.js:10798:23\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler@http://react-redux.realworld.io/__cypress/runner/cypress_runner.js:8733:31\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise@http://react-redux.realworld.io/__cypress/runner/cypress_runner.js:8790:18\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseCtx@http://react-redux.realworld.io/__cypress/runner/cypress_runner.js:8827:10\n    _drainQueueStep@http://react-redux.realworld.io/__cypress/runner/cypress_runner.js:5509:12\n    _drainQueue@http://react-redux.realworld.io/__cypress/runner/cypress_runner.js:5498:24\n    ../../node_modules/bluebird/js/release/async.js/</Async.prototype._drainQueues@http://react-redux.realworld.io/__cypress/runner/cypress_runner.js:5514:16\n    Async/this.drainQueues@http://react-redux.realworld.io/__cypress/runner/cypress_runner.js:5384:14\n",
+                "diff": "- 'Conduit'\n+ 'Conduitt'\n"
+              },
+              "uuid": "cb60e475-7c93-40f1-8e7e-f9110aa6b5cc",
+              "parentUUID": "b32f61bf-acd6-4db2-a734-0952c34820ab",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Dimension using document command",
+              "fullTitle": "doc command Dimension using document command",
+              "timedOut": null,
+              "duration": 145,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.document().should(doc => {\n  const dc = Cypress.$(doc);\n  console.log(dc.height());\n  console.log(dc.width());\n});",
+              "err": {},
+              "uuid": "e4311df1-3b81-4b6b-acd6-b19af5d84529",
+              "parentUUID": "b32f61bf-acd6-4db2-a734-0952c34820ab",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Dimension using cypress command",
+              "fullTitle": "doc command Dimension using cypress command",
+              "timedOut": null,
+              "duration": 125,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.viewport('ipad-2', 'portrait');\ncy.viewport(500, 700);",
+              "err": {},
+              "uuid": "6937506d-fced-4412-8871-ef1eb8a297bc",
+              "parentUUID": "b32f61bf-acd6-4db2-a734-0952c34820ab",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cookies setting using document command",
+              "fullTitle": "doc command Cookies setting using document command",
+              "timedOut": null,
+              "duration": 80,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.document().should(doc => {\n  doc.cookie = \"name=mandeep\";\n  console.log(doc.cookie);\n  doc.cookie = \"name=monika\";\n  console.log(doc.cookie);\n});",
+              "err": {},
+              "uuid": "c37f342a-3ccb-4402-bb15-e354dbc2abf9",
+              "parentUUID": "b32f61bf-acd6-4db2-a734-0952c34820ab",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cookies setting using cypress command",
+              "fullTitle": "doc command Cookies setting using cypress command",
+              "timedOut": null,
+              "duration": 223,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.setCookie('name', 'mandeep');\ncy.getCookie('name');\ncy.getCookies();\ncy.clearCookie('name-');\ncy.clearCookies();",
+              "err": {},
+              "uuid": "bd22b530-5b62-4e71-8aa5-7672b213200e",
+              "parentUUID": "b32f61bf-acd6-4db2-a734-0952c34820ab",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "dd782756-c503-4fe9-a9b6-3b9d2158a480",
+            "e4311df1-3b81-4b6b-acd6-b19af5d84529",
+            "6937506d-fced-4412-8871-ef1eb8a297bc",
+            "c37f342a-3ccb-4402-bb15-e354dbc2abf9",
+            "bd22b530-5b62-4e71-8aa5-7672b213200e"
+          ],
+          "failures": [
+            "cb60e475-7c93-40f1-8e7e-f9110aa6b5cc"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 7545,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
